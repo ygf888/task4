@@ -1,57 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Page</title>
-    <style>
-        /* Base styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
+<style>
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    @media (min-width: 600px) {
         .container {
-            width: 100%;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+            width: 80%;
         }
-        h1 {
-            color: #333;
+    }
+    @media (min-width: 768px) {
+        .container {
+            width: 60%;
         }
-        p {
-            margin: 20px 0;
+    }
+    @media (min-width: 1024px) {
+        .container {
+            width: 50%;
         }
-
-        /* Responsive styles */
-        @media (min-width: 600px) {
-            .container {
-                width: 80%;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .container {
-                width: 60%;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .container {
-                width: 50%;
-            }
-        }
-    </style>
-</head>
-<body>
+    }
+</style>
 
 <div class="container">
-    <p>This page adjusts to the size of your screen.</p>
     <h1>Thank you</h1>
 </div>
-
-</body>
-</html>

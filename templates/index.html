@@ -1,63 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Page</title>
-    <style>
-        /* Base styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
+<style>
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    @media (min-width: 600px) {
         .container {
-            width: 100%;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+            width: 80%;
         }
-        h1 {
-            color: #333;
+    }
+    @media (min-width: 768px) {
+        .container {
+            width: 60%;
         }
-        p {
-            margin: 20px 0;
+    }
+    @media (min-width: 1024px) {
+        .container {
+            width: 50%;
         }
-
-        /* Responsive styles */
-        @media (min-width: 600px) {
-            .container {
-                width: 80%;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .container {
-                width: 60%;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .container {
-                width: 50%;
-            }
-        }
-    </style>
-</head>
-<body>
+    }
+</style>
 
 <div class="container">
-    <h1>Responsive Design Example</h1>
-    <p>This page adjusts to the size of your screen. Resize your browser to see the effect.</p>
-    <h1>My second ML cloud based model: Text Sentiment</h1>
+    <h1>12 My second ML cloud based model: Text Sentiment</h1>
+    <img src="https://media.istockphoto.com/id/1737181835/photo/portrait-of-mongolian-couple-standing-on-pasture-carrying-milk-bucket-stool.jpg?s=1024x1024&w=is&k=20&c=kVfwEjzSOuGY2VHNnE0cpIPtuz1YTFxu3GIklu64xXM=" width="300" height="200">
     <form action="/result" method="post">
         <p>Please enter the text</p>
         <p><input type="text" name="t"></p>
-        <p><input type="submit" value="Enter"></p>
+        <p><input type="submit" value="Enter" style="width: 100px;height:100px;"></p>
     </form>
 </div>
-
-</body>
-</html>
